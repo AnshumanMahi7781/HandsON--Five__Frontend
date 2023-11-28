@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+  background-image: url("https://images.unsplash.com/photo-1676269098436-ed2a1a79e2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHB1cnBsZSUyMGxlbnN8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.roomJoiningContainer {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.452);
+  width: 300px;
+  height: 300px;
+}
+
+.roomJoiningContainer__Heading {
+  border: none;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.599);
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.roomJoiningContainer__formBox {
+  width: 95%;
+  height: 45px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomJoiningContainer_inutField {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 100%;
+  padding: 0em 0.2em;
+  outline: none;
+  color: #A00000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.roomJoiningContainer_inutField::placeholder {
+  color: #C62128;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.joinRoomButton {
+  width: 60%;
+  padding: 0.5em;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.6s ease-in-out;
+}
+
+.joinRoomButton:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.315);
+  transform: scale(1.1);
+}
+
+.chatContainer {
+  border-radius: 10px;
+  background-color: #f9fcff7b;
+  background-image: linear-gradient(147deg, #f9fcff4a 0%, #dee4eaa7 74%);
+  width: 40%;
+  height: 500px;
+  animation: fadeIn 0.4s ease-in;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.chatcontainer-ChatBox {
+  width: 100%;
+  height: 450px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.chatContainer_formBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.UsermessageField {
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  width: calc(100% - 100px);
+  height: 100%;
+  padding: 0em 1em;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.sendMessageButton {
+  border: none;
+  outline: none;
+  background-color: #5cb85c;
+  font-weight: 700;
+  font-size: 16px;
+  height: 100%;
+  width: 100px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.sendMessageButton:hover {
+  cursor: pointer;
+  background-color: #5cb85ce8;
+}
+
+.joinMSg {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: rgba(0, 0, 255, 0.827);
+  margin-top: 10px;
+}
